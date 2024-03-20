@@ -1,0 +1,334 @@
+* {
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+}
+body {
+    background: black;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 36px;
+}
+
+div.header div.left a .logo{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+div.header div.right{
+    display: flex;
+    color: white;
+}
+
+.material-symbols-sharp{
+margin-left: 16px;
+margin-right: 8px;
+}
+
+.strip{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 4px;
+}
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+div.carosello{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-items:flex-end;
+    align-items: center ;
+    height: 440px;
+    width: 70%;
+    padding: 36px 15%;
+}
+div.main_articolo {
+    width: 285px; 
+    height: 380px; 
+    overflow: hidden; 
+    flex-shrink: 0;
+    border-radius: 25px;
+}
+
+div.main_articolo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.main_title{
+    justify-items: right;
+    justify-content: right;
+    align-items: right;
+    color: white;
+    margin-left: 10%;
+    font-size: 36px;
+}
+
+div.separator{
+    margin: 0 15% 36px 15%;
+    width: 70%;
+    height: 1px;
+    background-color: #2a2b2c;
+}
+
+section.content div.category-container {
+    position: relative;
+    z-index: 1;
+    margin: 36px 15% 18px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.content div.category-container p{
+font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+}
+section.content div.category-container a.homeAM{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 8px 18px;
+    background-color: #6601FB;
+}
+section.content div.articles-container {
+    position: relative;
+    z-index: 1;
+    margin: 0 15% 36px 15%;
+    display: flex;
+}
+
+section.content div.articles-container a.column {
+    flex: 25%;
+    border-radius: 18px;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 290 / 395;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+section.content div.articles-container a.column div.items-container div.category-container {
+    display: flex;
+    justify-content: center;
+}
+
+section.content div.articles-container a.column div.items-container div.category-container span{
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 24px;
+    padding: 5px 12px;
+}
+
+section.content div.articles-container a.column div.items-container p {
+    position: relative;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 8px;
+    text-align: center;
+}
+
+section.content div.articles-container div.column {
+    flex: 37.75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+section.content div.articles-container div.column a.article {
+    flex: 33.33%;
+    display: flex;
+    height: 100%;
+    margin-bottom: 16px;
+}
+
+section.content div.articles-container div.column a.article div.banner {
+    height: 100%;
+    aspect-ratio: 161 / 108;
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+}
+
+section.content div.articles-container div.column a.article div.items-container p {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+section.content div.articles-container div.column a.article div.items-container span{
+    margin-bottom: 4px;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #464646;
+} 
+
+.amTag{
+    background-color: #6601FB;
+}
+.gTag{
+    background-color: #FE0444;
+}
+.SFTag{
+    background-color: #FFCCD1;
+}
+
+section.content div.category-container a.homeG{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 8px 18px;
+    background-color: #FE0444;
+}
+
+section.content div.category-container a.homeSF{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 8px 18px;
+    background-color: #FFCCD1;
+}
+
+#mainG{
+    background-image:
+    linear-gradient(180deg, #00000000, #000000ff),
+    url(https://xeud.it/image/3b7a4a8b-9c53-49c6-84d0-67d5b556df6f.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#mainSF{
+    background-image:
+    linear-gradient(180deg, #00000000, #000000ff),
+    url(https://xeud.it/image/4c2c75da-041a-4867-ac96-1c76a902d0fc.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#mainAM{
+    background-image:
+    linear-gradient(180deg, #00000000, #000000ff),
+    url(https://xeud.it/image/3cb8ea59-1ebc-42b2-92f6-a4825819c7b3.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+div.footer {
+    background-color: #272727;
+}
+
+div.footer div.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 15% 18px 15%;
+}
+div.footer div.first div.left a.logo{
+    width: 60px;
+    margin-right: 8px;
+}
+
+div.footer div.first div.left a.mark{
+    width: 100px;
+}
+
+/* Non abbiamo studiamo questa cosa, ma molto semplice da capire */
+div.footer div.first div.right a:not(:last-child) { 
+    margin-right: 16px;
+}
+
+div.footer div.first div.right a img {
+    height: 24px;
+}
+
+div.footer div.first div.left, div.footer div.first div.right {
+    display: flex;
+    align-items: center;
+}
+
+div.footer div.first div.left, div.footer div.first div.right {
+    display: flex;
+    align-items: center;
+}
+
+div.footer div.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 15%;
+}
+
+div.footer div.second div.left a, div.footer div.second div.right a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+div.footer div.second div.right a {
+    font-family: "Mont", Helvetica;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: right;
+}
+
+div.footer div.second div.left a{
+    font-family: "Mont", Helvetica;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-transform: uppercase;
+}
+
+div.footer div.third {
+    padding: 18px 15%;
+}
+
+div.footer div.third a {
+    font-family: "Mont", Helvetica;
+    font-size: 14px;
+    color: #9B9B9B;
+    margin-right: 16px;
+}
+
+div.spacer{
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+#inverted{
+    filter: invert(100%);
+}
