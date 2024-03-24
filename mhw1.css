@@ -1,7 +1,33 @@
+@font-face {
+    font-family: 'Outfitf';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/outfit/v11/QGYvz_MVcBeNP4NJuktqUYLkn8BJ.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Outfitf';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/outfit/v11/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Outfitf';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/outfit/v11/QGYvz_MVcBeNP4NJuktqUYLkn8BJ.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Outfitf';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/outfit/v11/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2) format('woff2');
+  }
+
 * {
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfitf", sans-serif;
     text-decoration: none;
 }
+
 body {
     background: black;
     width: 100%;
@@ -104,7 +130,7 @@ div.separator{
     background-color: #2a2b2c;
 }
 
-section.content>div.articles-container>div.column>a.article>div.items-container {
+section.content div.articles-container div.column a.article div.items-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -396,22 +422,22 @@ div.social {
     display: flex;
 }
 
-section.content>div.articles-container>a.column>div.items-container>div.category-container>span {
+section.content div.articles-container a.column div.items-container div.category-container span {
     font-size: 12px;
 }
 
-section.content>div.articles-container>a.column>div.items-container>p {
+section.content div.articles-container a.column div.items-container p {
     font-size: 18px;
 }
 
-section.content>div.articles-container>div.column>a.article>div.items-container>p {
+section.content div.articles-container div.column a.article div.items-container p {
     font-size: 13px;
 }
-section.content>div.articles-container>div.column>a.article>div.items-container>span {
+section.content div.articles-container div.column a.article div.items-container span {
     font-size: 11px;
 }
 
-section.content>div.articles-container>a.column>div.items-container>p {
+section.content div.articles-container a.column div.items-container p {
     font-size: 22px;
 }
 
@@ -437,53 +463,53 @@ div.articles-container div.column:not(:last-child) {
     margin-bottom: 16px;
 }
 
-section.content>div.articles-container>a.column>div.items-container>div.category-container>span {
+section.content div.articles-container a.column div.items-container div.category-container span {
     padding: 4px 12px;
 }
 
-section.content>div.articles-container>a.column>div.items-container>p {
+section.content div.articles-container a.column div.items-container p {
     font-size: 22px;
 }
 
-section.content>div.articles-container>div.column:not(:first-child) {
+section.content div.articles-container div.column:not(:first-child) {
     margin-left: 0;
 }
 
-section.content>div.articles-container>div.column>a.article>div.banner {
+section.content div.articles-container div.column a.article div.banner {
     width: 100%;
     height: auto;
 }
-section.content>div.articles-container>div.column>a.article>div.items-container>p {
+section.content div.articles-container div.column a.article div.items-container p {
     font-size: 15px;
 }
-section.content>div.articles-container>div.column>a.article>div.items-container>span {
+section.content div.articles-container div.column a.article div.items-container span {
     font-size: 12px;
 }
 
-div.footer>div.first {
+div.footer div.first {
     flex-direction: column;
     align-items: flex-start;
 }
 
-div.footer>div.first>div.left {
+div.footer div.first div.left {
     margin-bottom: 16px;
 }
 
-div.footer>div.second {
+div.footer div.second {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
 }
 
-div.footer>div.second>div.left, div.footer>div.second>div.right {
+div.footer div.second div.left, div.footer div.second div.right {
     margin-bottom: 36px;
 }
 
-div.footer>div.second>div.right a{
+div.footer div.second div.right a{
     text-align: left;
 }
 
-div.footer>div.third {
+div.footer div.third {
     padding-top: 0;
 }
 
